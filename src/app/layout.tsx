@@ -8,10 +8,10 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - João Vitor',
-    default: 'João Vitor - Frontend Developer',
+    default: 'João Vitor - Front-end Developer',
   },
   description:
-    'I’m João Vitor, a frontend developer based in Brazil. I love creating beautiful and functional web experiences. This is where I showcase my work. Let’s build something amazing together.',
+    'I’m João Vitor, a front-end developer based in Brazil. I love creating beautiful and functional web experiences. This is where I showcase my work. Let’s build something amazing together!',
 }
 
 export default function RootLayout({

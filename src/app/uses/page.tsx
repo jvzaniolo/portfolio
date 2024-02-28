@@ -1,6 +1,7 @@
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import Link from 'next/link'
 
 function ToolsSection({
   children,
@@ -59,26 +60,43 @@ export default function Uses() {
             which I’m eager to buy.
           </Tool>
           <Tool title="Logitech MX Master 3s Wireless Mouse">
-            It’s very ergonomic and just fits perfectly in my hands. Plus the
-            horizontal scrolling wheel is very useful when reading code.
+            It’s very ergonomic and fits perfectly in my hands. Plus the
+            horizontal scrolling wheel is very useful when reading code. But
+            sometimes I use the MackBook trackpad for a smooth experience.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Development tools">
           <Tool title="VS Code">
             I like to customize the file icons and themes every now and then,
-            and VS Code is really good for me. But I’m keeping an eye on
-            CodeEdit and Zed too.
+            and VS Code is really good for me. But I’m keeping an eye on{' '}
+            <Link
+              href="https://codeedit.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-teal-500 hover:underline hover:underline-offset-2 dark:text-teal-400"
+            >
+              CodeEdit
+            </Link>{' '}
+            and{' '}
+            <Link
+              href="https://zed.dev/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-teal-500 hover:underline hover:underline-offset-2 dark:text-teal-400"
+            >
+              Zed
+            </Link>{' '}
+            too.
           </Tool>
           <Tool title="MacOS Terminal">
-            I’ve used other terminals before but I always end up switching back
-            to the native Terminal app. It’s fast and I don’t really need any
-            extra features.
+            I’ve used other terminals before but I always switch back to the
+            native Terminal app. It’s fast and I don’t really need any extra
+            features.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Design">
           <Tool title="Figma">
-            Great experience, free and easy to share with others. Please don’t
-            use Adobe XD.
+            Great experience, free and easy to share with others.
           </Tool>
         </ToolsSection>
         <ToolsSection title="Productivity">
@@ -88,7 +106,7 @@ export default function Uses() {
           </Tool>
           <Tool title="Rectangle">
             I come from Windows so having a window management tool is handy for
-            me.
+            me and this one is free and have great shortcuts.
           </Tool>
           <Tool title="Bartender">
             Great tool for hiding your unused apps in the menubar.

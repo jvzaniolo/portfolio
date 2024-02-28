@@ -15,11 +15,11 @@ import logoAvenueCode from '@/images/logos/avenue-code.svg'
 import logoAlly from '@/images/logos/ally.jpeg'
 import logoBkBank from '@/images/logos/bk-bank.svg'
 import logoTargetSistemas from '@/images/logos/target-sistemas.jpeg'
-import image1 from '@/images/photos/image-1.jpg'
-import image2 from '@/images/photos/image-2.jpg'
-import image3 from '@/images/photos/image-3.jpg'
-import image4 from '@/images/photos/image-4.jpg'
-import image5 from '@/images/photos/image-5.jpg'
+import image1 from '@/images/photos/image-1.jpeg'
+import image2 from '@/images/photos/image-2.jpeg'
+import image3 from '@/images/photos/image-3.jpeg'
+import image4 from '@/images/photos/image-4.jpeg'
+import image5 from '@/images/photos/image-5.jpeg'
 import { getArticles, type Article } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 
@@ -139,28 +139,28 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'BK Bank',
-      title: 'Frontend Developer',
+      title: 'Front-end Developer',
       logo: logoBkBank,
       start: '2022',
       end: '2023',
     },
     {
       company: 'Avenue Code',
-      title: 'Frontend Developer',
+      title: 'Front-end Developer',
       logo: logoAvenueCode,
       start: '2021',
       end: '2022',
     },
     {
       company: 'Ally',
-      title: 'Frontend Developer',
+      title: 'Front-end Developer',
       logo: logoAlly,
       start: '2020',
       end: '2021',
     },
     {
       company: 'Target Sistemas',
-      title: 'Frontend Developer Intern',
+      title: 'Front-end Developer Intern',
       logo: logoTargetSistemas,
       start: '2019',
       end: '2020',
@@ -195,21 +195,49 @@ function Resume() {
 
 function Photos() {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let images = [
+    {
+      src: image1,
+      title: 'Photo by Holden Baxter on Unsplash',
+      alt: 'Empty road with mountains at sunset',
+    },
+    {
+      src: image2,
+      title: 'Photo by Nathan Dumlao on Unsplash',
+      alt: 'Coffee beans and grinder for different coffees',
+    },
+    {
+      src: image3,
+      title: 'Photo by Christopher Gower on Unsplash',
+      alt: 'MacBook on desk with the code editor opened',
+    },
+    {
+      src: image4,
+      title: 'Photo by Andre Tan on Unsplash',
+      alt: 'White NZXT Gaming PC',
+    },
+    {
+      src: image5,
+      title: 'Photo by Raphael Nogueira on Unsplash',
+      alt: 'Overhead shot of Rio de Janeiro, Brazil',
+    },
+  ]
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {images.map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image.src.src}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 sm:w-72 sm:rounded-2xl dark:bg-zinc-800',
               rotations[imageIndex % rotations.length],
             )}
           >
             <Image
-              src={image}
-              alt=""
+              src={image.src}
+              alt={image.alt}
+              title={image.title}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
@@ -228,12 +256,12 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Frontend Developer.
+            Front-end developer, gamer and tech enthusiast.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m João Vitor, a frontend developer based in Brazil. I love
+            I’m João Vitor, a front-end developer based in Brazil. I love
             creating beautiful and functional web experiences. This is where I
-            showcase my work. Let’s build something amazing together.
+            showcase my work. Let’s build something amazing together!
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
