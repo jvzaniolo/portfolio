@@ -11,7 +11,7 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAvenueCode from '@/images/logos/avenue-code.svg'
+import logoBackcountry from '@/images/logos/backcountry.jpeg'
 import logoAlly from '@/images/logos/ally.jpeg'
 import logoBkBank from '@/images/logos/bk-bank.svg'
 import logoTargetSistemas from '@/images/logos/target-sistemas.jpeg'
@@ -145,9 +145,9 @@ function Resume() {
       end: '2023',
     },
     {
-      company: 'Avenue Code',
-      title: 'Front-end Developer',
-      logo: logoAvenueCode,
+      company: 'Backcountry',
+      title: 'Front-end Developer Consultant',
+      logo: logoBackcountry,
       start: '2021',
       end: '2022',
     },
