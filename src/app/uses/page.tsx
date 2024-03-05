@@ -73,7 +73,7 @@ export default function Uses() {
               href="https://codeedit.app/"
               target="_blank"
               rel="noreferrer"
-              className="text-teal-500 hover:underline hover:underline-offset-2 dark:text-teal-400"
+              className="text-primary-500 dark:text-primary-400 hover:underline hover:underline-offset-2"
             >
               CodeEdit
             </Link>{' '}
@@ -82,7 +82,7 @@ export default function Uses() {
               href="https://zed.dev/"
               target="_blank"
               rel="noreferrer"
-              className="text-teal-500 hover:underline hover:underline-offset-2 dark:text-teal-400"
+              className="text-primary-500 dark:text-primary-400 hover:underline hover:underline-offset-2"
             >
               Zed
             </Link>{' '}
