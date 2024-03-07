@@ -6,6 +6,16 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
+    name: 'Todo App GraphQL Server',
+    description:
+      'A Node.js GraphQL server to learn about backend development with Apollo Server and MongoDB.',
+    link: {
+      href: 'https://github.com/jvzaniolo/woovi-challenge-server',
+      label: 'Todo App GraphQL Server',
+    },
+    logo: null,
+  },
+  {
     name: 'Daily Diet API',
     description:
       'A Node.js REST API to learn about backend development with Express, Drizzle and SQLite.',
@@ -80,7 +90,7 @@ export default function Projects() {
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
             </h2>
             <Card.Description>{project.description}</Card.Description>
-            <p className="group-hover:text-primary-500 relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition dark:text-zinc-200">
+            <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-primary-500 dark:text-zinc-200">
               <LinkIcon className="h-6 w-6 flex-none" />
               <span className="ml-2">{project.link.label}</span>
             </p>
