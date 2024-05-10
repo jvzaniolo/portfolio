@@ -4,12 +4,7 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
 
 function SocialLink({
   className,
@@ -26,9 +21,9 @@ function SocialLink({
     <li className={clsx(className, 'flex')}>
       <Link
         href={href}
-        className="hover:text-primary-500 dark:hover:text-primary-500 group flex text-sm font-medium text-zinc-800 transition dark:text-zinc-200"
+        className="group flex text-sm font-medium text-zinc-800 transition hover:text-primary-500 dark:text-zinc-200 dark:hover:text-primary-500"
       >
-        <Icon className="group-hover:fill-primary-500 h-6 w-6 flex-none fill-zinc-500 transition" />
+        <Icon className="h-6 w-6 flex-none fill-zinc-500 transition group-hover:fill-primary-500" />
         <span className="ml-4">{children}</span>
       </Link>
     </li>
@@ -104,13 +99,6 @@ export default function About() {
           <ul role="list">
             <SocialLink href="https://x.com/jvzaniolo/" icon={XIcon}>
               Follow me on X
-            </SocialLink>
-            <SocialLink
-              href="https://instagram.com/jvzaniolo/"
-              icon={InstagramIcon}
-              className="mt-4"
-            >
-              Follow me on Instagram
             </SocialLink>
             <SocialLink
               href="https://github.com/jvzaniolo/"

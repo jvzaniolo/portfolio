@@ -5,12 +5,7 @@ import clsx from 'clsx'
 import { Button } from '@/components/Button'
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import {
-  GitHubIcon,
-  InstagramIcon,
-  LinkedInIcon,
-  XIcon,
-} from '@/components/SocialIcons'
+import { GitHubIcon, LinkedInIcon, XIcon } from '@/components/SocialIcons'
 import logoBackcountry from '@/images/logos/backcountry.jpeg'
 import logoAlly from '@/images/logos/ally.jpeg'
 import logoBkBank from '@/images/logos/bk-bank.svg'
@@ -268,11 +263,6 @@ export default async function Home() {
               href="https://x.com/jvzaniolo/"
               aria-label="Follow me on X"
               icon={XIcon}
-            />
-            <SocialLink
-              href="https://instagram.com/jvzaniolo/"
-              aria-label="Follow me on Instagram"
-              icon={InstagramIcon}
             />
             <SocialLink
               href="https://github.com/jvzaniolo/"
